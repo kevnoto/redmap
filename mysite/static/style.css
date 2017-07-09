@@ -7,6 +7,14 @@ div.cell:hover{
     -moz-box-shadow:inset 0px 0px 0px .25vw white;
     box-shadow:inset 0px 0px 0px .25vw white;
 }
+
+a {
+    color: white;
+    text-decoration: none;
+    display:flex;
+    flex:1;
+}
+
 .wrapper {
     width: 95vw;
     height: 100vh;
@@ -31,4 +39,6 @@ div.cell:hover{
 .cell {
     align-items: center;
     justify-content: center;
+    color: white;
+    padding: 5px;
 }

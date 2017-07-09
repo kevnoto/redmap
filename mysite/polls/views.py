@@ -9,7 +9,7 @@ from .models import Question
 from django.shortcuts import render, get_object_or_404
 import numpy as np
 import json
-from get_data import serve_data
+from get_data import serve_data, get_subreddit_data
 
 
 
@@ -33,3 +33,6 @@ def vote(request, question_id):
 
 def get_data(request):
     return JsonResponse(serve_data(request))
+
+def get_sr_data(request):
+    return JsonResponse(get_subreddit_data(request))
